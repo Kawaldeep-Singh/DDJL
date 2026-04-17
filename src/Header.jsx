@@ -79,9 +79,9 @@ const Header = () => {
   </div>
   <div>
     <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
-      SHREE KRISHNA HERITAGE
+      Deen Dayal Jan Awas Yojana
     </h1>
-    <p className="text-gray-600 text-sm">SECTOR 9A, JHAJJAR</p>
+
   </div>
 </div>
 
