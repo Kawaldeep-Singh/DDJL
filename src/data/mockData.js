@@ -152,7 +152,7 @@ export const projectFeatures = [
   "Modern drainage system",
   "Gated community with 24/7 security",
   "HRERA Approved — HRERA-PKL-JJR-463-2023",
-  "Pre-approved loans from ICICI, HDFC & SBI",
+  "Pre-approved loans from ICICI",
 ];
 
 export const projectEdges = [

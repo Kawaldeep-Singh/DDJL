@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, Menu, X } from 'lucide-react';
 import { siteConfig } from './data/mockData';
+import EnquiryModal from './EnquiryModal';
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
@@ -61,29 +63,27 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav
-        className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${
+        className={`bg-white sticky top-0 z-40 transition-shadow duration-300 ${
           scrolled ? 'shadow-md' : 'shadow-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             {/* Logo */}
-
             <div className="flex items-center gap-3">
-  <div className="w-12 h-12 rounded overflow-hidden flex items-center justify-center">
-    <img
-      src="/logo.jpeg"
-      alt="Shree Krishna Heritage Logo"
-      className="w-full h-full object-contain"
-    />
-  </div>
-  <div>
-    <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
-      Deen Dayal Jan Awas Yojana
-    </h1>
-
-  </div>
-</div>
+              <div className="w-12 h-12 rounded overflow-hidden flex items-center justify-center">
+                <img
+                  src="/logo.jpeg"
+                  alt="Shree Krishna Heritage Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
+                  Deen Dayal Jan Awas Yojana
+                </h1>
+              </div>
+            </div>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-6">
@@ -117,8 +117,12 @@ const Header = () => {
               >
                 Contact Us
               </button>
-              <button className="bg-[#D32F2F] text-white px-6 py-2 rounded hover:bg-[#B71C1C] transition-colors font-medium animate-pulse">
-                Registration Open
+              {/* Registration Open — Modal trigger */}
+              <button
+                onClick={() => setShowModal(true)}
+                className="bg-[#D32F2F] text-white px-6 py-2 rounded hover:bg-[#B71C1C] transition-colors font-medium animate-pulse"
+              >
+                ENQUIRE NOW
               </button>
             </div>
 
@@ -164,13 +168,26 @@ const Header = () => {
               >
                 Contact Us
               </button>
-              <button className="w-full bg-[#D32F2F] text-white px-6 py-2 rounded hover:bg-[#B71C1C] transition-colors font-medium animate-pulse">
-                Registration Open
+              {/* Mobile ENQUIRE NOW — Modal trigger */}
+              <button
+                onClick={() => {
+                  setShowModal(true);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full bg-[#D32F2F] text-white px-6 py-2 rounded hover:bg-[#B71C1C] transition-colors font-medium animate-pulse"
+              >
+                ENQUIRE NOW
               </button>
             </div>
           )}
         </div>
       </nav>
+
+      {/* Enquiry Modal */}
+      <EnquiryModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+      />
     </>
   );
 };

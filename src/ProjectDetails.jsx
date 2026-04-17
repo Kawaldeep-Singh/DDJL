@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { siteConfig, projectInfo } from './data/mockData';
 import { FileText, Award, Building, Grid, MapPin } from 'lucide-react';
-
+import { ModalContext } from './App';
 const ProjectDetails = () => {
+  const { openModal } = useContext(ModalContext);
   return (
     <section className="bg-white py-8">
       <div className="max-w-7xl mx-auto px-4">
+      <div className='flex items-between justify-center gap-4 mb-6'>
+
+
         {/* Live Current Badge */}
-        <div className="inline-block bg-black text-white px-4 py-2 rounded mb-6 font-semibold">
+        <div className="inline-block bg-black text-white px-4 py-2 rounded   font-semibold">
           Live Current (1)
+        </div>
+
+        <button
+          onClick={openModal}
+          className="bg-[#D32F2F] text-white px-6 py-2 rounded font-bold hover:bg-[#B71C1C] transition-colors"
+        >
+          ENQUIRE NOW
+        </button>
+
         </div>
 
         {/* Project Info Box */}
@@ -66,7 +79,8 @@ const ProjectDetails = () => {
               <span className="mr-2">📌</span>
               <span>
                 <strong>REGISTRATION AMOUNT :</strong>{' '}
-                {projectInfo.registrationAmount} (Fully Refundable if Unsuccessful)
+                {projectInfo.registrationAmount} (Fully Refundable if
+                Unsuccessful)
               </span>
             </p>
           </div>

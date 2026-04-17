@@ -1,4 +1,5 @@
- import Header from './Header';
+import React, { useState } from 'react';
+import Header from './Header';
 import MarqueeBanner from './MarqueeBanner';
 import HeroSection from './HeroSection';
 import ProjectDetails from './ProjectDetails';
@@ -9,26 +10,37 @@ import ProjectTabs from './ProjectTabs';
 import Gallery from './Gallery';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
-import FloatingCallButton from './FloatingCallButton';
 import BottomBar from './BottomBar';
-// FloatingCallButton ko hata do — BottomBar uski jagah lega
+import EnquiryModal from './EnquiryModal';
+
+export const ModalContext = React.createContext();
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className="App">
-      <Header />
-      <MarqueeBanner />
-      <HeroSection />
-      <ProjectDetails />
-      <AboutSection />
-      <PaymentPlan />
-      <Amenities />
-      <ProjectTabs />
-      <Gallery />
-      <ContactSection />
-      <Footer />
-      <BottomBar />  {/* FloatingCallButton ki jagah yeh */}
-    </div>
+    <ModalContext.Provider value={{ openModal: () => setShowModal(true) }}>
+      <div className="App">
+        <Header />
+        <MarqueeBanner />
+        <HeroSection />
+        <ProjectDetails />
+        <AboutSection />
+        <PaymentPlan />
+        <Amenities />
+        <ProjectTabs />
+        <Gallery />
+        <ContactSection />
+        <Footer />
+        <BottomBar />
+
+        {/* Global Enquiry Modal */}
+        <EnquiryModal
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+        />
+      </div>
+    </ModalContext.Provider>
   );
 }
 

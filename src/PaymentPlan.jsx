@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { paymentPlans } from './data/mockData';
-
+import { ModalContext } from './App';
 const PaymentPlan = () => {
+  const { openModal } = useContext(ModalContext);
   return (
     <section id="payment-plan" className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
+      <div className='flex items-between justify-center gap-4 mb-6' >
+
+        <h2 className="text-3xl font-bold text-gray-900 text-center  ">
           Payment Plan
         </h2>
+
+        <button
+          onClick={openModal}
+          className="bg-[#D32F2F] text-white px-6 py-2 rounded font-bold hover:bg-[#B71C1C] transition-colors"
+        >
+          ENQUIRE NOW
+        </button>
+      </div>
 
         {/* Desktop Table */}
         <div className="hidden lg:block overflow-x-auto shadow-lg rounded-lg">
@@ -88,27 +99,39 @@ const PaymentPlan = () => {
               </h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">Rate / Sq. Yd.:</span>
+                  <span className="font-medium text-gray-600">
+                    Rate / Sq. Yd.:
+                  </span>
                   <span className="font-semibold">{plan.ratePerYard}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">Registration:</span>
+                  <span className="font-medium text-gray-600">
+                    Registration:
+                  </span>
                   <span className="font-semibold">{plan.registration}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">10% On Allotment:</span>
+                  <span className="font-medium text-gray-600">
+                    10% On Allotment:
+                  </span>
                   <span className="font-semibold">{plan.payment10}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">40% (30 Days):</span>
+                  <span className="font-medium text-gray-600">
+                    40% (30 Days):
+                  </span>
                   <span className="font-semibold">{plan.payment40}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">25% (90 Days):</span>
+                  <span className="font-medium text-gray-600">
+                    25% (90 Days):
+                  </span>
                   <span className="font-semibold">{plan.payment25_1}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium text-gray-600">25% On Possession:</span>
+                  <span className="font-medium text-gray-600">
+                    25% On Possession:
+                  </span>
                   <span className="font-semibold">{plan.payment25_2}</span>
                 </div>
                 <div className="flex justify-between border-t border-gray-200 pt-2 mt-2">
@@ -127,26 +150,17 @@ const PaymentPlan = () => {
         </p>
 
         {/* Banks Loan Approved */}
-     <div className="mt-8 text-center">
-  <h3 className="text-xl font-bold text-gray-900 mb-4">
-    Pre-Approved Home Loans Available
-  </h3>
-  <div className="flex flex-wrap justify-center gap-6">
-
-    {/* ICICI Bank */}
-    <div className="bg-white border border-none rounded-lg p-0   flex flex-col items-center justify-center min-w-[320px]">
-      <img
-        src="public/icici.jpg"
-        className="w-auto object-contain"
-      />
-
-    </div>
-
-
-
-  </div>
-</div>
-
+        <div className="mt-8 text-center">
+          <h3 className="text-xl font-bold text-gray-900 mb-4">
+            Pre-Approved Home Loans Available
+          </h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            {/* ICICI Bank */}
+            <div className="bg-white border border-none rounded-lg p-0   flex flex-col items-center justify-center min-w-[320px]">
+              <img src="/icici.jpg" className="w-auto object-contain" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

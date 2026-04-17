@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { projectFeatures, projectEdges, locationEdges } from './data/mockData';
+import EnquiryForm from './EnquiryForm';
 
 const ProjectTabs = () => {
   const [activeTab, setActiveTab] = useState('site-plan');
@@ -41,13 +42,15 @@ const ProjectTabs = () => {
           </button>
         </div>
 
+
+
         {/* Tab Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
           {/* Site Plan */}
           {activeTab === 'site-plan' && (
             <>
-               
+
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Site Plan</h3>
                 <p className="text-gray-700 mb-4">
@@ -66,6 +69,12 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className='w-80%'>
+
+                 <EnquiryForm/>
+                </div>
+
             </>
           )}
 
@@ -86,6 +95,10 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
+              <div className='w-80%'>
+
+                 <EnquiryForm/>
+                </div>
             </>
           )}
 
@@ -106,6 +119,11 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className='w-80%'>
+
+                 <EnquiryForm/>
+                </div>
             </>
           )}
 

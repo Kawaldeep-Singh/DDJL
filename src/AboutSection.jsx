@@ -46,11 +46,7 @@ const AboutSection = () => {
 
         {/* Info Banners */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-          <div className="bg-[#0066B2] text-white py-4 px-6 rounded-lg text-center">
-            <p className="text-xl font-bold">
-              APPLICATION INVITED FOR {projectInfo.totalPlots} PLOTS ONLY
-            </p>
-          </div>
+         
           <div className="bg-[#0066B2] text-white py-4 px-6 rounded-lg text-center">
             <a
               href={`tel:${siteConfig.phone}`}
