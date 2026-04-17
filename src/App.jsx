@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from './Header';
+ import Header from './Header';
 import MarqueeBanner from './MarqueeBanner';
 import HeroSection from './HeroSection';
 import ProjectDetails from './ProjectDetails';
@@ -11,8 +10,8 @@ import Gallery from './Gallery';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
 import FloatingCallButton from './FloatingCallButton';
-// import { Toaster } from './toaster';
-import './App.css';
+import BottomBar from './BottomBar';
+// FloatingCallButton ko hata do — BottomBar uski jagah lega
 
 function App() {
   return (
@@ -28,8 +27,7 @@ function App() {
       <Gallery />
       <ContactSection />
       <Footer />
-      <FloatingCallButton />
-      {/* <Toaster /> */}
+      <BottomBar />  {/* FloatingCallButton ki jagah yeh */}
     </div>
   );
 }

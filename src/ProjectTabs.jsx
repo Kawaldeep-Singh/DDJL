@@ -47,13 +47,7 @@ const ProjectTabs = () => {
           {/* Site Plan */}
           {activeTab === 'site-plan' && (
             <>
-              <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center">
-                <img
-                  src="https://www.deendayaljanawasyojanajhajjar.com/assets/layout.png"
-                  alt="Shree Krishna Heritage Layout Plan"
-                  className="w-full h-auto rounded"
-                />
-              </div>
+               
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Site Plan</h3>
                 <p className="text-gray-700 mb-4">
@@ -78,13 +72,7 @@ const ProjectTabs = () => {
           {/* Project Edge */}
           {activeTab === 'project-edge' && (
             <>
-              <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop"
-                  alt="Project Edge"
-                  className="w-full h-auto rounded"
-                />
-              </div>
+
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   The Project Edge — Shree Krishna Heritage, Sector 9A, Jhajjar
@@ -104,13 +92,7 @@ const ProjectTabs = () => {
           {/* Location Edge */}
           {activeTab === 'location-edge' && (
             <>
-              <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop"
-                  alt="Location Map"
-                  className="w-full h-auto rounded"
-                />
-              </div>
+
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   The Location Edge — Shree Krishna Heritage, Sector 9A, Jhajjar

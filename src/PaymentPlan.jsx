@@ -127,25 +127,26 @@ const PaymentPlan = () => {
         </p>
 
         {/* Banks Loan Approved */}
-        <div className="mt-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">
-            Pre-Approved Home Loans Available
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="inline-block bg-white border border-gray-200 rounded-lg p-4 shadow-md min-w-[100px]">
-              <div className="text-3xl font-bold text-[#0066B2]">SBI</div>
-              <p className="text-sm text-gray-600 mt-1">State Bank of India</p>
-            </div>
-            <div className="inline-block bg-white border border-gray-200 rounded-lg p-4 shadow-md min-w-[100px]">
-              <div className="text-3xl font-bold text-[#D32F2F]">HDFC</div>
-              <p className="text-sm text-gray-600 mt-1">HDFC Bank</p>
-            </div>
-            <div className="inline-block bg-white border border-gray-200 rounded-lg p-4 shadow-md min-w-[100px]">
-              <div className="text-3xl font-bold text-[#F57C00]">ICICI</div>
-              <p className="text-sm text-gray-600 mt-1">ICICI Bank</p>
-            </div>
-          </div>
-        </div>
+     <div className="mt-8 text-center">
+  <h3 className="text-xl font-bold text-gray-900 mb-4">
+    Pre-Approved Home Loans Available
+  </h3>
+  <div className="flex flex-wrap justify-center gap-6">
+
+    {/* ICICI Bank */}
+    <div className="bg-white border border-none rounded-lg p-0   flex flex-col items-center justify-center min-w-[320px]">
+      <img
+        src="public/icici.jpg"
+        className="w-auto object-contain"
+      />
+
+    </div>
+
+
+
+  </div>
+</div>
+
       </div>
     </section>
   );

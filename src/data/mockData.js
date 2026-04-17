@@ -20,25 +20,25 @@ export const heroImages = [
     id: 1,
     title: "Gated Community",
     image:
-      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&auto=format&fit=crop",
+      "/public/gated-community-1536x864.jpg",
   },
   {
     id: 2,
     title: "KMP Expressway",
     image:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&auto=format&fit=crop",
+      "/public/KMP.jpeg",
   },
   {
     id: 3,
     title: "AIIMS (NCI)",
     image:
-      "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&auto=format&fit=crop",
+     "/public/NIC.webp",
   },
   {
     id: 4,
     title: "Reliance MET City",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
+      "/public/met.jpg",
   },
 ];
 
@@ -121,37 +121,37 @@ export const amenities = [
     id: 1,
     title: "Gated Community",
     image:
-      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=400&auto=format&fit=crop",
+      "/public/gated-community-1536x864.jpg",
   },
   {
     id: 2,
     title: "24/7 Security",
     image:
-      "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&auto=format&fit=crop",
+      "/public/247.png",
   },
   {
     id: 3,
     title: "Wide Roads",
     image:
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&auto=format&fit=crop",
+     "/public/wide road.jpg",
   },
   {
     id: 4,
     title: "Stilt + 4 Floors",
     image:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&auto=format&fit=crop",
+      "/public/4+.jpg",
   },
   {
     id: 5,
     title: "Independent Registry",
     image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&auto=format&fit=crop",
   },
   {
     id: 6,
     title: "Green Landscaping",
     image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&auto=format&fit=crop",
+      "/public/freen.jpg",
   },
 ];
 
@@ -186,8 +186,10 @@ export const locationEdges = [
 ];
 
 export const galleryImages = [
-  "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",
+  "/public/siteimage1.png",
+  "/public/siteimage2.png",
+  "/public/siteimage3.png",
+  "/public/siteimage4.png",
+  "/public/siteimage5.png",
+
 ];

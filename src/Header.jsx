@@ -68,21 +68,22 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             {/* Logo */}
+
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-[#2E7D32] rounded flex items-center justify-center">
-                <div className="text-white font-bold text-xs text-center leading-tight">
-                  SHREE
-                  <br />
-                  KRISHNA
-                </div>
-              </div>
-              <div>
-                <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
-                  SHREE KRISHNA HERITAGE
-                </h1>
-                <p className="text-gray-600 text-sm">SECTOR 9A, JHAJJAR</p>
-              </div>
-            </div>
+  <div className="w-12 h-12 rounded overflow-hidden flex items-center justify-center">
+    <img
+      src="/logo.jpeg"
+      alt="Shree Krishna Heritage Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
+  <div>
+    <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
+      SHREE KRISHNA HERITAGE
+    </h1>
+    <p className="text-gray-600 text-sm">SECTOR 9A, JHAJJAR</p>
+  </div>
+</div>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-6">
