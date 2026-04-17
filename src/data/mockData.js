@@ -19,26 +19,22 @@ export const heroImages = [
   {
     id: 1,
     title: "Gated Community",
-    image:
-      "/public/gated-community-1536x864.jpg",
+    image: "/gated-community-1536x864.jpg",
   },
   {
     id: 2,
     title: "KMP Expressway",
-    image:
-      "/public/KMP.jpeg",
+    image: "/KMP.jpeg",
   },
   {
     id: 3,
     title: "AIIMS (NCI)",
-    image:
-     "/public/NIC.webp",
+    image: "/NIC.webp",
   },
   {
     id: 4,
     title: "Reliance MET City",
-    image:
-      "/public/met.jpg",
+    image: "/met.jpg",
   },
 ];
 
@@ -49,7 +45,7 @@ export const projectInfo = {
   allocationDate: "30 April 2026",
   startingPrice: "₹68.65 Lakhs*",
   registrationAmount: "₹21,000",
-  totalPlots: 6, // 6 plot sizes available
+  totalPlots: 6,
   ratePerSqYd: "₹52,000",
 };
 
@@ -120,38 +116,32 @@ export const amenities = [
   {
     id: 1,
     title: "Gated Community",
-    image:
-      "/public/gated-community-1536x864.jpg",
+    image: "/gated-community-1536x864.jpg",
   },
   {
     id: 2,
     title: "24/7 Security",
-    image:
-      "/public/247.png",
+    image: "/247.png",
   },
   {
     id: 3,
     title: "Wide Roads",
-    image:
-     "/public/wide road.jpg",
+    image: "/wide road.jpg",
   },
   {
     id: 4,
     title: "Stilt + 4 Floors",
-    image:
-      "/public/4+.jpg",
+    image: "/4+.jpg",
   },
   {
     id: 5,
     title: "Independent Registry",
-    image:
-            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&auto=format&fit=crop",
   },
   {
     id: 6,
     title: "Green Landscaping",
-    image:
-      "/public/freen.jpg",
+    image: "/freen.jpg",
   },
 ];
 
@@ -186,10 +176,9 @@ export const locationEdges = [
 ];
 
 export const galleryImages = [
-  "/public/siteimage1.png",
-  "/public/siteimage2.png",
-  "/public/siteimage3.png",
-  "/public/siteimage4.png",
-  "/public/siteimage5.png",
-
+  "/siteimage1.png",
+  "/siteimage2.png",
+  "/siteimage3.png",
+  "/siteimage4.png",
+  "/siteimage5.png",
 ];
