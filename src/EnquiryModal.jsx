@@ -2,7 +2,7 @@ import React from 'react';
 import { X } from 'lucide-react';
 import EnquiryForm from './EnquiryForm';
 
-const EnquiryModal = ({ isOpen, onClose }) => {
+const EnquiryModal = ({ isOpen, onClose, onSuccess }) => {
   if (!isOpen) return null;
 
   return (
@@ -32,8 +32,8 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             </p>
           </div>
 
-          {/* Form */}
-          <EnquiryForm onSuccess={onClose} />
+          {/* Form — onSuccess: form submit hone par timer bhi stop hoga */}
+          <EnquiryForm onSuccess={onSuccess || onClose} />
         </div>
       </div>
     </>
