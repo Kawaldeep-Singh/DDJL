@@ -12,12 +12,18 @@ const PaymentPlan = () => {
           Payment Plan
         </h2>
 
-        <button
-          onClick={openModal}
-          className="bg-[#D32F2F] text-white px-6 py-2 rounded font-bold hover:bg-[#B71C1C] transition-colors"
-        >
-          ENQUIRE NOW
-        </button>
+        <div className="relative inline-block">
+  {/* Live badge */}
+  <span className="absolute -top-2.5 -right-2.5 bg-[#FFC107] text-black text-[10px] font-black px-2 py-0.5 rounded-full z-10 uppercase tracking-wide shadow">
+    FREE
+  </span>
+  <button
+    onClick={openModal}
+    className="relative bg-[#D32F2F] text-white px-8 py-3 rounded-lg font-bold text-sm uppercase tracking-wider border-2 border-red-400 shadow-[0_0_15px_rgba(211,47,47,0.5)] hover:shadow-[0_0_25px_rgba(211,47,47,0.8)] hover:bg-[#B71C1C] hover:-translate-y-0.5 transition-all duration-200"
+  >
+    ENQUIRE NOW
+  </button>
+</div>
       </div>
 
         {/* Desktop Table */}

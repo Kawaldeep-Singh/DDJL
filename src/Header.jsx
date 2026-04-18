@@ -46,20 +46,27 @@ const Header = () => {
     <>
       {/* Top Info Bar */}
       <div className="bg-[#0066B2] text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-2">
-            <span>{formatDateTime(currentTime)}</span>
-            <span className="hidden sm:inline">|</span>
-            <span>Helpline No. {siteConfig.phone}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span>For any Issue please email To:-</span>
-            <a href={`mailto:${siteConfig.email}`} className="hover:underline">
-              {siteConfig.email}
-            </a>
-          </div>
-        </div>
-      </div>
+  <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-2">
+
+    {/* Left — Date + Phone */}
+    <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-0.5 text-center sm:text-left">
+      <span className="text-xs sm:text-sm whitespace-nowrap">
+        {formatDateTime(currentTime)}
+      </span>
+      <span className="hidden sm:inline text-blue-300">|</span>
+      <a
+        href={`tel:${siteConfig.phone}`}
+        className="text-xs sm:text-sm font-semibold whitespace-nowrap hover:underline"
+      >
+        📞 {siteConfig.phone}
+      </a>
+    </div>
+
+    {/* Right — Email (hidden on xs, visible sm+) */}
+    
+
+  </div>
+</div>
 
       {/* Main Navigation */}
       <nav
@@ -80,7 +87,7 @@ const Header = () => {
               </div>
               <div>
                 <h1 className="text-[#2E7D32] font-bold text-lg leading-tight">
-                  Deen Dayal Jan Awas Yojana
+                  ShrI Krishan Heritage
                 </h1>
               </div>
             </div>

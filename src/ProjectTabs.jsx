@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { projectFeatures, projectEdges, locationEdges } from './data/mockData';
-import EnquiryForm from './EnquiryForm';
 
 const ProjectTabs = () => {
   const [activeTab, setActiveTab] = useState('site-plan');
@@ -42,15 +41,19 @@ const ProjectTabs = () => {
           </button>
         </div>
 
-
-
         {/* Tab Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
           {/* Site Plan */}
           {activeTab === 'site-plan' && (
             <>
-
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/site.jpeg"
+                  alt="Shree Krishna Heritage Site Plan"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Site Plan</h3>
                 <p className="text-gray-700 mb-4">
@@ -69,19 +72,19 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
-
-              <div className='w-80%'>
-
-                 <EnquiryForm/>
-                </div>
-
             </>
           )}
 
           {/* Project Edge */}
           {activeTab === 'project-edge' && (
             <>
-
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/site.jpeg"
+                  alt="Shree Krishna Heritage Project Edge"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   The Project Edge — Shree Krishna Heritage, Sector 9A, Jhajjar
@@ -95,17 +98,19 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
-              <div className='w-80%'>
-
-                 <EnquiryForm/>
-                </div>
             </>
           )}
 
           {/* Location Edge */}
           {activeTab === 'location-edge' && (
             <>
-
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/site.jpeg"
+                  alt="Shree Krishna Heritage Location"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   The Location Edge — Shree Krishna Heritage, Sector 9A, Jhajjar
@@ -119,11 +124,6 @@ const ProjectTabs = () => {
                   ))}
                 </ul>
               </div>
-
-              <div className='w-80%'>
-
-                 <EnquiryForm/>
-                </div>
             </>
           )}
 

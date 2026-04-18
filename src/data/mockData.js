@@ -5,7 +5,7 @@ export const siteConfig = {
   projectName: "Shree Krishna Heritage",
   location: "Sector 9A, Jhajjar, Haryana",
   phone: "+91-9211496111",
-  email: "info@deendayaljanawasyojanajhajjar.com",
+   
   officeAddress: "Sector 9A, Jhajjar, Haryana",
   reraNumber: "HRERA-PKL-JJR-463-2023",
   website: "https://www.deendayaljanawasyojanajhajjar.com",

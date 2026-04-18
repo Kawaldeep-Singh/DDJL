@@ -7,7 +7,7 @@ const HeroSection = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Shree Krishna Heritage Jhajjar | DDJAY Plots Sector 9A | ₹52,000/Sq.Yd</title>
+        <title>Shree Krishna Heritage, Sector 9A, Jhajjar Under Deen Dayal Jan Awas Yojna 2016</title>
         <meta name="title" content="Shree Krishna Heritage Jhajjar | DDJAY Plots Sector 9A | ₹52,000/Sq.Yd" />
         <meta
           name="description"
@@ -67,7 +67,7 @@ const HeroSection = () => {
               "addressCountry": "IN"
             },
             "telephone": "+91-9211496111",
-            "email": "info@deendayaljanawasyojanajhajjar.com"
+             
           })}
         </script>
       </Helmet>
