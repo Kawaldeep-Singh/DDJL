@@ -67,7 +67,7 @@ const HeroSection = () => {
               "addressCountry": "IN"
             },
             "telephone": "+91-9211496111",
-             
+
           })}
         </script>
       </Helmet>
@@ -97,8 +97,10 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <h1 className="text-white text-2xl md:text-4xl font-bold text-center mb-4">
-              SHREE KRISHNA HERITAGE — DEEN DAYAL JAN AWAS YOJNA
+            <h1 className="text-white text-xl md:text-3xl font-bold text-center mb-4">
+        Shree Krishna Heritage, Sector 9A, Jhajjar Under Deen Dayal Jan Awas Yojna 2016
+
+
             </h1>
           </div>
 

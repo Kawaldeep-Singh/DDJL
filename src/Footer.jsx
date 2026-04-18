@@ -31,14 +31,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="hidden md:block w-px h-10 bg-blue-400 mx-4" />
-          <div className="text-left">
-            <p className="text-xs text-blue-200 uppercase tracking-widest font-medium">
-              Presented By
-            </p>
-            <p className="text-white font-bold text-lg leading-tight">
-              DEE Divine Propinfra
-            </p>
-          </div>
+           
         </div>
       </div>
 
